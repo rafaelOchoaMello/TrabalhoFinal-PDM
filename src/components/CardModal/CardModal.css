@@ -1,0 +1,49 @@
+#CardModal-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    width: 100vw;  
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+div.CardModal-panel{
+    width: 750px;
+    height: 350px;
+    overflow-y: scroll;
+
+    z-index: 1;
+    position: absolute;
+
+    border: 2px solid rgb(39, 48, 60);
+    box-sizing: border-box;
+
+    background-color: rgb(243, 243, 243);    
+}
+
+div.CardModal-content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+
+div.CardModal-content > p{
+    margin-top: 15px;
+}
+
+button.CardModal-close {
+    border:none;
+    font-size: 17px;
+    color: rgb(128, 128, 128);
+}
+
+button.CardModal-close:hover {
+    cursor: pointer;
+    color: rgb(63, 63, 63);
+}
