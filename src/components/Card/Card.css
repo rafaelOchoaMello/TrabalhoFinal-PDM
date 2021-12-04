@@ -1,0 +1,14 @@
+div.CardBody{
+    margin: 7px;
+    width: 140px;
+    height: 180px;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 5px;
+    background-color: rgb(247, 247, 247);
+}
+
+div.CardBody:hover{
+    cursor: pointer;
+    border: 1px solid rgba(20, 23, 26, 0.309);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

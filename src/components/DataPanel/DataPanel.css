@@ -1,0 +1,22 @@
+div.DataPanelBody{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+
+div.DataPanelContent{
+    display: flex;
+    width: 85%;
+    flex-flow: row wrap;
+}
+
+/* Adicionar ajuste para os cards no mobile */
+@media only screen and (max-width: 360px) {
+    div.DataPanelContent{
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        flex-flow: row wrap;
+    }    
+}
