@@ -1,5 +1,6 @@
 import axios from "axios";
 
-const AxiosConnection = axios.create({baseURL: 'https://pokeapi.co/api/v2/pokedex/'});
+export const AxiosConnection = axios.create({baseURL: 'https://pokeapi.co/api/v2/pokedex/'});
+export const AxiosSinglePokemonData = axios.create({baseURL:'https://pokeapi.co/api/v2/pokemon-species/'})
 
-export default AxiosConnection;
+// export default AxiosConnection;
