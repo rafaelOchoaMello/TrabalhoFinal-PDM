@@ -12,9 +12,16 @@
     background-color: rgba(0, 0, 0, 0.575);
 }
 
+div.modalHeader{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
 div.CardModal-panel{
     width: 750px;
-    height: 350px;
+    height: 370px;
     overflow-y: scroll;
 
     z-index: 1;
@@ -46,4 +53,31 @@ button.CardModal-close {
 button.CardModal-close:hover {
     cursor: pointer;
     color: rgb(63, 63, 63);
+}
+
+p.typeContainer{
+    font-size: 19px;
+    font-family: monospace;
+    color: rgb(89, 89, 89);
+    margin-bottom: 0px;
+}
+
+p.statsContainer{
+    font-size: 16px;
+    font-family: monospace;
+    color: rgb(89, 89, 89);
+    margin-bottom: 0px;
+}
+
+span.typeBadge{
+    background-color: black;
+    padding: 3px 5px 3px 5px;
+    border-radius: 5px;
+    margin-right: 4px;
+    color: rgb(220, 220, 220);
+
+}
+
+img.pokemonImage{
+    margin-bottom: 0px;
 }

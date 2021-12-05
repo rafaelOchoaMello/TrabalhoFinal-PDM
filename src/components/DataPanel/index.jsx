@@ -8,7 +8,7 @@ const DataPanels = () => {
   const [pokeData, setPokeData] = useState([]);
 
   const getData = async () => {
-    const baseData = await pokeAPI.get("kanto")
+    const baseData = await pokeAPI.get("1")
     setPokeData(baseData.data.pokemon_entries)
   }
 

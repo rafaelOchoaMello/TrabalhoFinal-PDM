@@ -10,20 +10,41 @@ function CardModal(props) {
         const baseData = await singleData.get(props.pokeId.toString());
         setPokeData(baseData.data)
     }
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         getSingleData();
     }, []);
-
-    console.log(pokeData)
 
     return (
         <>
             <div id="CardModal-container">
                 <div className="CardModal-panel">
-                    <button onClick={props.onClose} className='CardModal-close'> X </button>
+                    <div className='modalHeader'>
+                        <button onClick={props.onClose} className='CardModal-close'> X </button>
+                        <p className='statsContainer'>{pokeData != null && pokeData.id}</p>
+                    </div>
+
                     <div className="CardModal-content">
-                        <p>{pokeData!=null && pokeData.name.toUpperCase()}</p>
+                        {pokeData != null && (
+                            <>
+                                <p>{pokeData.name.toUpperCase()}</p>
+                                <img className='pokemonImage' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeData.id}.png`} alt="" />
+                                <br />
+                                <p className='typeContainer'>
+                                    {pokeData.types.map((data, index) =>
+                                        <span className='typeBadge'>
+                                            {data.type.name}
+                                        </span>
+                                    )}
+                                </p>
+                                <p className='statsContainer'>
+                                    <p>Hp | Atk | Def | S.Atk | S.Def | Spd</p>
+                                    {pokeData.stats.map((data, index) =>
+                                        <span className='statsValues'>{data.base_stat} {index >= 0 && index < 5 ? ' - ' : ''}</span>
+                                    )}
+                                </p>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>
