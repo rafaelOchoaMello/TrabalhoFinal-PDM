@@ -12,3 +12,23 @@ div.CardBody:hover{
     border: 1px solid rgba(20, 23, 26, 0.309);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
+p.pokemonID{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2px 0px 10px 5px;
+}
+
+div.tempImgPlaceholder{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    border: 1px solid burlywood;
+}
+
+div.nameContainer{
+    text-align: center;
+    font-size: 15px;
+    color:rgb(77, 77, 77);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
