@@ -10,7 +10,9 @@ const Cards = ({ children }) => {
     <>
       <div className="CardBody" onClick={() => { setCardModal(true) }}>
         <p className='pokemonID'>{children.entry_number}</p>
-        <div className="tempImgPlaceholder"></div>
+        <div className="tempImgPlaceholder">
+          <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${children.entry_number}.png`} alt="" />
+        </div>
         <div className="nameContainer">
           <p>{children.pokemon_species.name}</p>
         </div>
