@@ -62,7 +62,7 @@ p.typeContainer{
     margin-bottom: 0px;
 }
 
-p.statsContainer{
+div.statsContainer{
     font-size: 16px;
     font-family: monospace;
     color: rgb(89, 89, 89);

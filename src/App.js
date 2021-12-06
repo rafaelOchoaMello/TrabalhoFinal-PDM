@@ -1,13 +1,16 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import DataPanel from "./components/DataPanel";
+import Content from "./components/Content/Content";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <DataPanel />
+      <Router>
+        <Navbar />
+        <Content />
+      </Router>
     </div>
   );
 }
