@@ -37,12 +37,12 @@ function CardModal(props) {
                                         </span>
                                     )}
                                 </p>
-                                <p className='statsContainer'>
+                                <div className='statsContainer'>
                                     <p>Hp | Atk | Def | S.Atk | S.Def | Spd</p>
                                     {pokeData.stats.map((data, index) =>
                                         <span className='statsValues'>{data.base_stat} {index >= 0 && index < 5 ? ' - ' : ''}</span>
                                     )}
-                                </p>
+                                </div>
                             </>
                         )}
                     </div>

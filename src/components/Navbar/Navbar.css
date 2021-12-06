@@ -2,6 +2,7 @@ div.Navbar{
     display:flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content:center;
 
     width: 100%;
     height: 80px;
@@ -12,14 +13,31 @@ div.Navbar{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-div.Navbar > img {
-    margin-left: 20px;
+div.Navbar nav ul {
+    list-style: none;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
-div.Navbar > p {
+div.Navbar nav ul li{
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+div.Navbar nav ul li a{
+    text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-left: 8px;
     letter-spacing: 1px;
     color: whitesmoke;
     font-size: larger;
+    margin-left: 0px;
+}
+
+div.Navbar nav ul li a.optionalLinks{
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
