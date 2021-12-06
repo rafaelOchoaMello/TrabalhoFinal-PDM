@@ -1,0 +1,11 @@
+div.chartStyle{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+div.chartStyle > div.chartContainer {
+    margin-top: 20px;
+    width: 40%;
+    height: 400px;
+}
